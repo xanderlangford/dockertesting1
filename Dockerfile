@@ -1,6 +1,6 @@
 FROM centos:latest
 
-RUN yum -y install httpd curl unzip git
+RUN yum -y install httpd
 WORKDIR /var/www
 
 COPY . /var/www/html
