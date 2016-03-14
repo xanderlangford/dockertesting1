@@ -1,6 +1,5 @@
-FROM ubuntu:latest
+FROM httpd:latest
 
-RUN apt-get -y update && apt-get -y upgrade && apt-get -y install apache
 WORKDIR /var/www
 
 COPY . /var/www/html
