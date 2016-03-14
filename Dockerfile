@@ -1,6 +1,6 @@
 FROM centos:latest
 
-RUN yum update && yum upgrade && yum -y install httpd
+RUN yum -y update && yum -y upgrade && yum -y install httpd
 WORKDIR /var/www
 
 COPY . /var/www/html
